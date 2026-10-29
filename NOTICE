@@ -1,0 +1,42 @@
+FontVibe Rune Transliterator
+https://fontvibe.ai/tools/rune-generator
+
+Two licenses, split by what the file is:
+
+  Code (npm/, pypi/, scripts/)      MIT          — see LICENSE
+  Rune tables (data/runes.json)     CC BY 4.0    — see LICENSE-DATA
+
+Attribution requested for the tables (any reasonable form; rel="nofollow"
+links are fine):
+
+  Rune tables from FontVibe — https://fontvibe.ai/tools/rune-generator — CC BY 4.0
+
+────────────────────────────────────────────────────────────────────────
+What the tables are
+
+  The Latin-to-rune mappings, digraph rules, rune-name spellings and glosses
+  used by FontVibe's rune pages:
+    https://fontvibe.ai/tools/rune-generator              (Elder Futhark)
+    https://fontvibe.ai/tools/younger-futhark-translator  (Younger Futhark)
+    https://fontvibe.ai/tools/anglo-saxon-runes           (Anglo-Saxon futhorc)
+
+  They are a phonetic approximation for writing modern text in runes, not a
+  reconstruction of Old Norse or Old English.
+
+  The runes themselves are an alphabet, not anyone's work. The rune names
+  and their glosses are the conventional ones found in popular references;
+  nothing in them is claimed as original research.
+
+────────────────────────────────────────────────────────────────────────
+Unicode data
+
+  Code points and character names shown in README.md are produced at build
+  time by Python's unicodedata module from the Unicode Character Database
+  (https://www.unicode.org/ucd/). They are not stored in this repository's
+  data files.
+
+────────────────────────────────────────────────────────────────────────
+tests/golden.json
+
+  Recorded from FontVibe's production TypeScript implementation. Licensed
+  with the tables (CC BY 4.0).

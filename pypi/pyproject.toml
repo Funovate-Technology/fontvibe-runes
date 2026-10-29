@@ -1,0 +1,50 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "rune-transliterator"
+version = "1.0.0"
+description = "English/Latin text to Elder Futhark, Younger Futhark and Anglo-Saxon Futhorc runes, and back. Real Unicode output, full rune charts, no dependencies."
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT AND CC-BY-4.0"
+license-files = ["LICENSE", "LICENSE-DATA", "NOTICE"]
+authors = [{ name = "Funovate Technology", email = "jacktu@fun-innovate.com" }]
+keywords = [
+  "runes", "runic", "futhark", "elder-futhark", "younger-futhark", "futhorc",
+  "anglo-saxon", "norse", "viking", "transliteration", "unicode", "tattoo",
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "Natural Language :: English",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Text Processing :: Linguistic",
+  "Topic :: Software Development :: Libraries",
+  "Typing :: Typed",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://fontvibe.ai/tools/rune-generator"
+"Younger Futhark" = "https://fontvibe.ai/tools/younger-futhark-translator"
+"Anglo-Saxon Futhorc" = "https://fontvibe.ai/tools/anglo-saxon-runes"
+Source = "https://github.com/Funovate-Technology/fontvibe-runes"
+Issues = "https://github.com/Funovate-Technology/fontvibe-runes/issues"
+
+[project.scripts]
+rune-transliterator = "rune_transliterator.__main__:main"
+
+# runes.json inside the package is gitignored (data/runes.json at the repo root
+# is the single source); hatchling honours VCS ignore files, so name it here or
+# the wheel ships without its tables.
+[tool.hatch.build]
+artifacts = ["src/rune_transliterator/runes.json", "tests/golden.json"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/rune_transliterator"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src/", "tests/", "scripts/", "README.md", "LICENSE", "LICENSE-DATA", "NOTICE", "pyproject.toml"]

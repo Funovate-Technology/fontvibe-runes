@@ -1,0 +1,66 @@
+{
+  "name": "rune-transliterator",
+  "version": "1.0.0",
+  "description": "English/Latin text to Elder Futhark, Younger Futhark and Anglo-Saxon Futhorc runes, and back. Real Unicode output, full rune charts, zero dependencies. Phonetic approximation, not a translation.",
+  "keywords": [
+    "runes",
+    "runic",
+    "futhark",
+    "elder-futhark",
+    "younger-futhark",
+    "futhorc",
+    "anglo-saxon",
+    "norse",
+    "viking",
+    "transliteration",
+    "rune-translator",
+    "unicode",
+    "tattoo"
+  ],
+  "homepage": "https://fontvibe.ai/tools/rune-generator",
+  "bugs": "https://github.com/Funovate-Technology/fontvibe-runes/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Funovate-Technology/fontvibe-runes.git",
+    "directory": "npm"
+  },
+  "license": "MIT AND CC-BY-4.0",
+  "author": "Funovate Technology (https://fontvibe.ai)",
+  "main": "./index.js",
+  "module": "./index.mjs",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs",
+      "require": "./index.js"
+    },
+    "./runes.json": "./runes.json",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "rune-transliterator": "./cli.js"
+  },
+  "files": [
+    "index.js",
+    "index.mjs",
+    "index.d.ts",
+    "data.js",
+    "data.mjs",
+    "runes.json",
+    "cli.js",
+    "README.md",
+    "LICENSE",
+    "LICENSE-DATA",
+    "NOTICE"
+  ],
+  "engines": {
+    "node": ">=14"
+  },
+  "sideEffects": false,
+  "scripts": {
+    "prepack": "node scripts/sync-data.js",
+    "pretest": "node scripts/sync-data.js",
+    "test": "node test.js"
+  }
+}

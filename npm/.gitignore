@@ -1,0 +1,5 @@
+data.js
+data.mjs
+runes.json
+*.tgz
+node_modules/

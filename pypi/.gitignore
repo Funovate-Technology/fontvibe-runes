@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+src/rune_transliterator/runes.json
+dist/
+build/
+*.egg-info/
+tests/golden.json

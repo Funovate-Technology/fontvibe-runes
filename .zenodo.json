@@ -1,0 +1,43 @@
+{
+  "upload_type": "software",
+  "title": "FontVibe Rune Transliterator: Latin text to Elder Futhark, Younger Futhark and Anglo-Saxon Futhorc runes",
+  "description": "<p>Phonetic transliteration of English and other Latin-alphabet text into three runic alphabets — Elder Futhark (24 runes), Younger Futhark long-branch (16 runes) and Anglo-Saxon Futhorc (32 runes) — and back.</p><p>A single JSON file holds the mapping tables (letters, digraphs such as th, ng and ea, rune names and conventional glosses); dependency-free JavaScript (ESM and CommonJS) and Python implementations are generated from it. Both are verified against golden outputs recorded from the implementation behind fontvibe.ai's rune tools, including SHA-256 checks over every Unicode scalar value. All 44 distinct runes are single code points in the Unicode Runic block (U+16A0–U+16FF); the README's charts, code points and Unicode names are generated from unicodedata and checked by a stdlib-only script.</p><p>This is a phonetic approximation of modern spelling, not a translation into Old Norse or Old English. Live tools: <a href=\"https://fontvibe.ai/tools/rune-generator\">Elder Futhark</a>, <a href=\"https://fontvibe.ai/tools/younger-futhark-translator\">Younger Futhark</a>, <a href=\"https://fontvibe.ai/tools/anglo-saxon-runes\">Anglo-Saxon futhorc</a>.</p>",
+  "creators": [
+    {
+      "name": "FontVibe"
+    }
+  ],
+  "access_right": "open",
+  "license": "mit",
+  "language": "eng",
+  "keywords": [
+    "runes",
+    "runic",
+    "elder futhark",
+    "younger futhark",
+    "futhorc",
+    "anglo-saxon runes",
+    "transliteration",
+    "unicode"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://fontvibe.ai/tools/rune-generator",
+      "relation": "isSupplementTo",
+      "resource_type": "other",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://www.npmjs.com/package/rune-transliterator",
+      "relation": "isIdenticalTo",
+      "resource_type": "software",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://pypi.org/project/rune-transliterator/",
+      "relation": "isIdenticalTo",
+      "resource_type": "software",
+      "scheme": "url"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+title: "FontVibe Rune Transliterator"
+message: "If you use these rune tables or this library, please cite it."
+type: software
+authors:
+  - name: "FontVibe"
+    website: "https://fontvibe.ai"
+abstract: >-
+  Phonetic transliteration of English and other Latin-alphabet text into
+  Elder Futhark (24 runes), Younger Futhark long-branch (16 runes) and
+  Anglo-Saxon Futhorc (32 runes), and back. Shared JSON mapping tables drive
+  dependency-free JavaScript and Python implementations whose output is
+  verified against golden data recorded from the implementation behind
+  fontvibe.ai's rune tools, across every Unicode scalar value. A phonetic
+  approximation, not a translation into Old Norse or Old English.
+keywords:
+  - runes
+  - runic
+  - futhark
+  - elder futhark
+  - younger futhark
+  - futhorc
+  - anglo-saxon runes
+  - transliteration
+  - unicode
+license:
+  - MIT
+  - CC-BY-4.0
+url: "https://fontvibe.ai/tools/rune-generator"
+repository-code: "https://github.com/Funovate-Technology/fontvibe-runes"
+version: "1.0.0"
+date-released: "2026-10-30"
