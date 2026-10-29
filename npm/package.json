@@ -39,7 +39,7 @@
     "./package.json": "./package.json"
   },
   "bin": {
-    "rune-transliterator": "./cli.js"
+    "rune-transliterator": "cli.js"
   },
   "files": [
     "index.js",
