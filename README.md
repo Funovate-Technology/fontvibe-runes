@@ -1,5 +1,7 @@
 # Rune transliterator
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23776174.svg)](https://doi.org/10.5281/zenodo.23776174)
+
 **English (or any Latin-alphabet) text → Elder Futhark, Younger Futhark and Anglo-Saxon Futhorc
 runes, and back — with the full rune charts, so you can check every letter yourself.**
 
